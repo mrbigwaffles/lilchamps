@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li'l Champs Nursery - Childcare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        .funding-bg {
+            background-image: url('http://static.photos/children/1200x630/6');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-heading text-dark">Li'l Champs Nursery</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-dark hover:text-accent transition">Home</a>
+                <a href="about.html" class="text-dark hover:text-accent transition">About Us</a>
+                <a href="childcare.html" class="text-accent font-medium">Childcare</a>
+                <a href="apply.html" class="text-dark hover:text-accent transition">Apply</a>
+                <a href="keydates.html" class="text-dark hover:text-accent transition">Key Dates</a>
+                <a href="gallery.html" class="text-dark hover:text-accent transition">Gallery</a>
+                <a href="contact.html" class="text-dark hover:text-accent transition">Contact Us</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:01772875657" class="hidden md:block text-dark hover:text-accent">
+                    <span class="font-medium">01772 875657</span>
+                </a>
+                <a href="contact.html" class="bg-primary hover:bg-yellow-400 text-white px-4 py-2 rounded-full font-medium transition">
+                    Book a Visit
+                </a>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-lg" id="mobile-menu">
+            <a href="index.html" class="block py-2 text-dark hover:text-accent transition">Home</a>
+            <a href="about.html" class="block py-2 text-dark hover:text-accent transition">About Us</a>
+            <a href="childcare.html" class="block py-2 text-accent font-medium">Childcare</a>
+            <a href="apply.html" class="block py-2 text-dark hover:text-accent transition">Apply</a>
+            <a href="keydates.html" class="block py-2 text-dark hover:text-accent transition">Key Dates</a>
+            <a href="gallery.html" class="block py-2 text-dark hover:text-accent transition">Gallery</a>
+            <a href="contact.html" class="block py-2 text-dark hover:text-accent transition">Contact Us</a>
+            <a href="tel:01772875657" class="block py-2 text-dark hover:text-accent">
+                <span class="font-medium">01772 875657</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-secondary py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading text-white mb-4">Childcare Options</h1>
+            <p class="text-xl text-white opacity-90 max-w-3xl mx-auto">
+                All 3 to 4-year-olds in England can get 570 free hours per year. It's usually taken as 15 hours a week for 38 weeks of the year. Some 3 to 4-year-olds are also eligible for 30 hours free childcare a week, as are some 2-year-olds.
+            </p>
+        </div>
+    </section>
+
+    <!-- Funding Section -->
+    <section class="funding-bg">
+        <div class="bg-black bg-opacity-60 py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg p-8 shadow-lg" data-aos="fade-up">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/3 mb-6 md:mb-0">
+                            <img src="http://static.photos/children/400x400/7" alt="Children playing" class="rounded-full w-40 h-40 object-cover mx-auto">
+                        </div>
+                        <div class="md:w-2/3 md:pl-8">
+                            <h2 class="text-3xl font-heading text-dark mb-4">Free childcare</h2>
+                            <p class="text-gray-600 mb-4">
+                                We cater for children from ages 2 until 5 years old. All children in England, aged 3-4 years are eligible for 15 hours a week free childcare. Some children aged 3-4 years old may be eligible for 30 hours a week free childcare, while some 2 year olds may also be eligible for free childcare.
+                            </p>
+                            <p class="text-gray-600 font-medium">
+                                Found out more below
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Age Groups Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg" data-aos="fade-up">
+                    <img src="http://static.photos/children/640x360/8" alt="2 year old" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-heading text-dark mb-4">2 Year Olds</h3>
+                    <p class="text-gray-600 mb-4">
+                        We provide childcare for 2 year olds. Some 2-year-olds can get free childcare if you are in receipt of certain types of benefits. We are flexible in our hours and can make arrangements as per your requests.
+                    </p>
+                    <a href="apply.html" class="inline-block text-accent hover:text-red-500 font-medium transition">Learn more →</a>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/children/640x360/9" alt="3-4 year olds" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-heading text-dark mb-4">3-4 Year Olds (15 hours)</h3>
+                    <p class="text-gray-600 mb-4">
+                        All 3 to 4-year-olds in England can get 570 free hours per year. It's usually taken as 15 hours a week for 38 weeks of the year, but you can choose to take fewer hours over more weeks, for example.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        You can get it from the term after your child's 3rd birthday.
+                    </p>
+                    <a href="apply.html" class="inline-block text-accent hover:text-red-500 font-medium transition">Learn more →</a>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/children/640x360/10" alt="3-4 year olds group" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-heading text-dark mb-4">3-4 Year Olds (30 hours)</h3>
+                    <p class="text-gray-600 mb-4">
+                        You may be able to get 30 hours of free childcare per week for 38 weeks of the year (during school term time).
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        Your eligibility depends on:
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 mb-4">
+                        <li>if you are working</li>
+                        <li>your income (and your partner's income, if you have one)</li>
+                        <li>your child's age and circumstances</li>
+                        <li>your immigration status</li>
+                    </ul>
+                    <a href="apply.html" class="inline-block text-accent hover:text-red-500 font-medium transition">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Checker -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-primary p-8 text-white flex items-center">
+                        <div>
+                            <h2 class="text-3xl font-heading mb-4">Check Your Eligibility</h2>
+                            <p class="mb-6">
+                                Use the government's eligibility checker to see if you qualify for free childcare hours for your 2, 3 or 4 year old.
+                            </p>
+                            <img src="http://static.photos/education/400x300/1" alt="Child with parent" class="rounded-lg">
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-xl font-semibold text-dark mb-4">Quick Eligibility Guide</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-secondary bg-opacity-20 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i data-feather="check" class="text-secondary w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-dark">2 Year Olds</h4>
+                                    <p class="text-gray-600 text-sm">Eligible if receiving certain benefits like Income Support, JSA, ESA, Universal Credit, etc.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-secondary bg-opacity-20 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i data-feather="check" class="text-secondary w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-dark">3-4 Year Olds (15 hours)</h4>
+                                    <p class="text-gray-600 text-sm">Available to all families regardless of income or employment status.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-secondary bg-opacity-20 w-8 h-8 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i data-feather="check" class="text-secondary w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-dark">3-4 Year Olds (30 hours)</h4>
+                                    <p class="text-gray-600 text-sm">Both parents (if applicable) must be working and earning at least £142 per week but less than £100,000 per year.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="https://www.gov.uk/help-with-childcare-costs/free-childcare-and-education-for-2-to-4-year-olds" target="_blank" class="inline-block mt-6 bg-dark hover:bg-blue-800 text-white px-6 py-3 rounded-full font-medium transition">
+                            Check Eligibility on GOV.UK
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-heading text-dark mb-12 text-center">What Parents Say</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/1" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-dark">Sarah K.</h4>
+                            <p class="text-gray-500 text-sm">Parent of 3 year old</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "My daughter absolutely loves coming to Li'l Champs. The staff are wonderful and she's learned so much through their play-based approach."
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/2" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-dark">Mohammed A.</h4>
+                            <p class="text-gray-500 text-sm">Parent of 2 year old</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "We were nervous about sending our son to nursery, but the team at Li'l Champs made the transition so smooth. He's thriving in their care."
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/100x100/3" alt="Parent" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-dark">Emily T.</h4>
+                            <p class="text-gray-500 text-sm">Parent of 4 year old</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "The 30 hours funding has been a lifesaver for our family. Li'l Champs helped us navigate the application process and our daughter loves it here."
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-dark text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-heading mb-6">Ready to Enroll Your Child?</h2>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto mb-8">
+                We're here to help you navigate the childcare options and funding available for your family.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="apply.html" class="bg-accent hover:bg-red-500 text-white px-8 py-3 rounded-full font-medium transition inline-block">
+                    Apply Now
+                </a>
+                <a href="contact.html" class="bg-primary hover:bg-yellow-400 text-white px-8 py-3 rounded-full font-medium transition inline-block">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-heading mb-4">Li'l Champs Nursery</h3>
+                    <address class="not-italic">
+                        19 Stanleyfield Road Deepdale<br>
+                        Preston<br>
+                        PR1 1QL
+                    </address>
+                    <p class="mt-4">
+                        Phone: <a href="tel:01772875657" class="hover:text-primary transition">01772 875657</a><br>
+                        Email: <a href="mailto:lilchampsnursery@gmail.com" class="hover:text-primary transition">lilchampsnursery@gmail.com</a>
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="childcare.html" class="hover:text-primary transition">Childcare</a></li>
+                        <li><a href="apply.html" class="hover:text-primary transition">Apply</a></li>
+                        <li><a href="keydates.html" class="hover:text-primary transition">Key Dates</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-primary transition">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <p class="mb-4">Li'l Champs Nursery<br>19 Stanleyfield Rd<br>Preston<br>Deepdale<br>PR1 1QL</p>
+                    <a href="#" class="inline-block text-sm text-gray-400 hover:text-primary transition">Google map</a>
+                    <div class="mt-4">
+                        <p>Phone: <a href="tel:01772875657" class="hover:text-primary transition">01772 875657</a></p>
+                        <p>Email: <a href="mailto:lilchampsnursery@gmail.com" class="hover:text-primary transition">lilchampsnursery@gmail.com</a></p>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-4 bg-primary hover:bg-yellow-400 text-white px-6 py-2 rounded-full font-medium transition">
+                        Book a Visit
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Li'l Champs Nursery. All rights reserved.</p>
+                <p class="mt-2 text-sm">Website design by 786 Retail Media Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

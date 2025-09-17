@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li'l Champs Nursery - Apply</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        .admission-bg {
+            background-image: url('http://static.photos/education/1200x630/4');
+            background-size: cover;
+            background-position: center;
+        }
+        .step-card {
+            transition: all 0.3s ease;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="font-sans bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-heading text-dark">Li'l Champs Nursery</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-dark hover:text-accent transition">Home</a>
+                <a href="about.html" class="text-dark hover:text-accent transition">About Us</a>
+                <a href="childcare.html" class="text-dark hover:text-accent transition">Childcare</a>
+                <a href="apply.html" class="text-accent font-medium">Apply</a>
+                <a href="keydates.html" class="text-dark hover:text-accent transition">Key Dates</a>
+                <a href="gallery.html" class="text-dark hover:text-accent transition">Gallery</a>
+                <a href="contact.html" class="text-dark hover:text-accent transition">Contact Us</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:01772875657" class="hidden md:block text-dark hover:text-accent">
+                    <span class="font-medium">01772 875657</span>
+                </a>
+                <a href="contact.html" class="bg-primary hover:bg-yellow-400 text-white px-4 py-2 rounded-full font-medium transition">
+                    Book a Visit
+                </a>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-lg" id="mobile-menu">
+            <a href="index.html" class="block py-2 text-dark hover:text-accent transition">Home</a>
+            <a href="about.html" class="block py-2 text-dark hover:text-accent transition">About Us</a>
+            <a href="childcare.html" class="block py-2 text-dark hover:text-accent transition">Childcare</a>
+            <a href="apply.html" class="block py-2 text-accent font-medium">Apply</a>
+            <a href="keydates.html" class="block py-2 text-dark hover:text-accent transition">Key Dates</a>
+            <a href="gallery.html" class="block py-2 text-dark hover:text-accent transition">Gallery</a>
+            <a href="contact.html" class="block py-2 text-dark hover:text-accent transition">Contact Us</a>
+            <a href="tel:01772875657" class="block py-2 text-dark hover:text-accent">
+                <span class="font-medium">01772 875657</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="admission-bg relative">
+        <div class="bg-black bg-opacity-60 py-32">
+            <div class="container mx-auto px-4 text-center text-white">
+                <h1 class="text-4xl md:text-6xl font-heading mb-6">Apply for a Place</h1>
+                <p class="text-xl max-w-3xl mx-auto mb-8">Join our nursery family - simple steps to get started</p>
+                <a href="#process" class="inline-block bg-accent hover:bg-red-500 text-white px-8 py-3 rounded-full font-medium transition">
+                    Learn How
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-heading text-dark mb-4">Our admissions process is quick and simple...</h2>
+                <p class="text-gray-600">
+                    Download the registration form below, fill it out and email it to us. You can also print it out and hand in to us directly at the nursery. We'll let you know if we need anything else from you.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6 mb-16">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm step-card flex flex-col items-center text-center" data-aos="fade-up">
+                    <div class="bg-primary bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="home" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Visit Us</h3>
+                    <p class="text-gray-600 flex-grow">You can visit us to see our nursery and facilities.</p>
+                    <a href="contact.html" class="mt-4 text-primary hover:text-yellow-600 font-medium">Book a visit →</a>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm step-card flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-secondary bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="edit" class="text-secondary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Register</h3>
+                    <p class="text-gray-600 flex-grow">Register your child by completing the form below.</p>
+                    <a href="#downloads" class="mt-4 text-secondary hover:text-green-600 font-medium">View forms →</a>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm step-card flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-accent bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="check-circle" class="text-accent w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Apply for eligibility</h3>
+                    <p class="text-gray-600 flex-grow">Check if you are eligible for free childcare.</p>
+                    <a href="https://www.gov.uk/help-with-childcare-costs/free-childcare-and-education-for-2-to-4-year-olds" target="_blank" class="mt-4 text-accent hover:text-red-600 font-medium">Check eligibility →</a>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm step-card flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-dark bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="smile" class="text-dark w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Taster Session</h3>
+                    <p class="text-gray-600 flex-grow">Bring your child for a taster session.</p>
+                    <a href="contact.html" class="mt-4 text-dark hover:text-blue-600 font-medium">Book session →</a>
+                </div>
+            </div>
+
+            <!-- Downloads Section -->
+            <div id="downloads" class="bg-gray-50 rounded-lg p-8 mb-16">
+                <h2 class="text-3xl font-heading text-dark mb-8 text-center">Download Forms</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center" data-aos="fade-right">
+                        <div class="bg-primary bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="file-text" class="text-primary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading text-dark mb-4">Registration Form</h3>
+                        <p class="text-gray-600 mb-6">Download and complete the registration form to apply for a place at our nursery.</p>
+                        <a href="#" class="bg-primary hover:bg-yellow-500 text-white px-6 py-3 rounded-full font-medium transition inline-block">
+                            Download
+                        </a>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center" data-aos="fade-left">
+                        <div class="bg-secondary bg-opacity-20 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i data-feather="user" class="text-secondary w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading text-dark mb-4">All About Me Form</h3>
+                        <p class="text-gray-600 mb-6">Tell us more about your child to help us provide the best possible care.</p>
+                        <a href="#" class="bg-secondary hover:bg-green-500 text-white px-6 py-3 rounded-full font-medium transition inline-block">
+                            Download
+                        </a>
+                    </div>
+                </div>
+
+                <div class="max-w-2xl mx-auto mt-8 text-center">
+                    <p class="text-gray-600">
+                        Download the form, fill it out and email it to us...<br>
+                        Our email is: <a href="mailto:lilchampsnursery@gmail.com" class="text-accent hover:text-red-600">lilchampsnursery@gmail.com</a>
+                    </p>
+                    <p class="text-gray-600 mt-2">
+                        You can also print it out and hand it in to us directly at the nursery.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-heading text-dark mb-8 text-center">Frequently Asked Questions</h2>
+                
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                            <h3 class="text-lg font-semibold text-dark text-left">How will my child be helped in their development?</h3>
+                            <i data-feather="plus" class="text-accent w-5 h-5"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4">
+                            <p class="text-gray-600">
+                                Each child develops at their own rate. We will be using the EYFS to track your child's development. If they are behind on their development, we will plan individual activities with your child to help them develop in a certain area, for example: maths.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                            <h3 class="text-lg font-semibold text-dark text-left">Can I have flexible sessions?</h3>
+                            <i data-feather="plus" class="text-accent w-5 h-5"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4">
+                            <p class="text-gray-600">
+                                Yes, we offer flexible session arrangements to suit your family's needs. Please discuss your requirements with us when you visit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                            <h3 class="text-lg font-semibold text-dark text-left">How much are private fees?</h3>
+                            <i data-feather="plus" class="text-accent w-5 h-5"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4">
+                            <p class="text-gray-600">
+                                Our private fees vary depending on the age of your child and the number of sessions required. Please contact us for our latest fee schedule.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                            <h3 class="text-lg font-semibold text-dark text-left">Can I stay with my child?</h3>
+                            <i data-feather="plus" class="text-accent w-5 h-5"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4">
+                            <p class="text-gray-600">
+                                We encourage a smooth transition period where parents can stay with their child initially. The duration of this will be agreed upon with the key worker based on your child's needs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                            <h3 class="text-lg font-semibold text-dark text-left">Do you provide lunch?</h3>
+                            <i data-feather="plus" class="text-accent w-5 h-5"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4">
+                            <p class="text-gray-600">
+                                Children need to bring their own packed lunches that contain healthy food. We will provide healthy snacks and milk during snack times.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                            <h3 class="text-lg font-semibold text-dark text-left">Do you do trips?</h3>
+                            <i data-feather="plus" class="text-accent w-5 h-5"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4">
+                            <p class="text-gray-600">
+                                Yes, we organize educational trips and outings throughout the year. Parents will be informed in advance and permission slips will need to be completed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                            <h3 class="text-lg font-semibold text-dark text-left">What is the notice period?</h3>
+                            <i data-feather="plus" class="text-accent w-5 h-5"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4">
+                            <p class="text-gray-600">
+                                We require one half-term's notice in writing if you wish to withdraw your child from the nursery.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up">
+                        <button class="faq-toggle w-full flex justify-between items-center p-4 focus:outline-none">
+                            <h3 class="text-lg font-semibold text-dark text-left">How can I complain if I am not happy?</h3>
+                            <i data-feather="plus" class="text-accent w-5 h-5"></i>
+                        </button>
+                        <div class="faq-content hidden px-4 pb-4">
+                            <p class="text-gray-600">
+                                We have a complaints policy in place. Initially, we encourage you to speak with your child's key worker or the manager. If the matter remains unresolved, please put your complaint in writing to the nursery manager.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-dark text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-heading mb-6">Ready to Join Our Nursery?</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#downloads" class="bg-primary hover:bg-yellow-400 text-white px-8 py-3 rounded-full font-medium transition inline-block">
+                    Download Forms
+                </a>
+                <a href="contact.html" class="bg-accent hover:bg-red-500 text-white px-8 py-3 rounded-full font-medium transition inline-block">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-heading mb-4">Li'l Champs Nursery</h3>
+                    <address class="not-italic">
+                        19 Stanleyfield Road Deepdale<br>
+                        Preston<br>
+                        PR1 1QL
+                    </address>
+                    <p class="mt-4">
+                        Phone: <a href="tel:01772875657" class="hover:text-primary transition">01772 875657</a><br>
+                        Email: <a href="mailto:lilchampsnursery@gmail.com" class="hover:text-primary transition">lilchampsnursery@gmail.com</a>
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="childcare.html" class="hover:text-primary transition">Childcare</a></li>
+                        <li><a href="apply.html" class="hover:text-primary transition">Apply</a></li>
+                        <li><a href="keydates.html" class="hover:text-primary transition">Key Dates</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-primary transition">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <p class="mb-4">Li'l Champs Nursery<br>19 Stanleyfield Rd<br>Preston<br>Deepdale<br>PR1 1QL</p>
+                    <a href="#" class="inline-block text-sm text-gray-400 hover:text-primary transition">Google map</a>
+                    <div class="mt-4">
+                        <p>Phone: <a href="tel:01772875657" class="hover:text-primary transition">01772 875657</a></p>
+                        <p>Email: <a href="mailto:lilchampsnursery@gmail.com" class="hover:text-primary transition">lilchampsnursery@gmail.com</a></p>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-4 bg-primary hover:bg-yellow-400 text-white px-6 py-2 rounded-full font-medium transition">
+                        Book a Visit
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Li'l Champs Nursery. All rights reserved.</p>
+                <p class="mt-2 text-sm">Website design by 786 Retail Media Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                if (content.classList.contains('hidden')) {
+                    icon.setAttribute('data-feather', 'plus');
+                } else {
+                    icon.setAttribute('data-feather', 'minus');
+                }
+                feather.replace();
+            });
+        });
+    </script>
+</body>
+</html>

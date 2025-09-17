@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li'l Champs Nursery - About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        .history-bg {
+            background-image: url('http://static.photos/education/1200x630/1');
+            background-size: cover;
+            background-position: center;
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 20px;
+            background-color: #EF476F;
+        }
+    </style>
+</head>
+<body class="font-sans bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-heading text-dark">Li'l Champs Nursery</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-dark hover:text-accent transition">Home</a>
+                <a href="about.html" class="text-accent font-medium">About Us</a>
+                <a href="childcare.html" class="text-dark hover:text-accent transition">Childcare</a>
+                <a href="apply.html" class="text-dark hover:text-accent transition">Apply</a>
+                <a href="keydates.html" class="text-dark hover:text-accent transition">Key Dates</a>
+                <a href="gallery.html" class="text-dark hover:text-accent transition">Gallery</a>
+                <a href="contact.html" class="text-dark hover:text-accent transition">Contact Us</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:01772875657" class="hidden md:block text-dark hover:text-accent">
+                    <span class="font-medium">01772 875657</span>
+                </a>
+                <a href="contact.html" class="bg-primary hover:bg-yellow-400 text-white px-4 py-2 rounded-full font-medium transition">
+                    Book a Visit
+                </a>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-lg" id="mobile-menu">
+            <a href="index.html" class="block py-2 text-dark hover:text-accent transition">Home</a>
+            <a href="about.html" class="block py-2 text-accent font-medium">About Us</a>
+            <a href="childcare.html" class="block py-2 text-dark hover:text-accent transition">Childcare</a>
+            <a href="apply.html" class="block py-2 text-dark hover:text-accent transition">Apply</a>
+            <a href="keydates.html" class="block py-2 text-dark hover:text-accent transition">Key Dates</a>
+            <a href="gallery.html" class="block py-2 text-dark hover:text-accent transition">Gallery</a>
+            <a href="contact.html" class="block py-2 text-dark hover:text-accent transition">Contact Us</a>
+            <a href="tel:01772875657" class="block py-2 text-dark hover:text-accent">
+                <span class="font-medium">01772 875657</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-primary py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-heading text-white mb-4">About Li'l Champs</h1>
+            <p class="text-xl text-white opacity-90 max-w-3xl mx-auto">
+                The personal development, behaviour and welfare of the children in our care are at the heart of our ethos.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8" data-aos="fade-right">
+                    <img src="http://static.photos/education/640x360/2" alt="Nursery children" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="text-3xl font-heading text-dark mb-6">Highest Standards</h2>
+                    <p class="text-gray-600 mb-4">
+                        Lil Champs nursery is situated in the heart of Preston. We are close to the city centre and serve the community in Deepdale and the surrounding areas. We provide a home from home environment for all our children.
+                    </p>
+                    <p class="text-gray-600">
+                        Children are cared for by our experienced child care practitioners trained to the highest standards. The personal development, behaviour and welfare of the children are at the heart of our ethos. Our practitioners create a stimulating learning environment where children under our care are taught through play.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up">
+                    <i data-feather="award" class="text-secondary w-10 h-10 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Qualified Staff</h3>
+                    <p class="text-gray-600">With years of childcare experience to provide the best care.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="home" class="text-primary w-10 h-10 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Spacious Environment</h3>
+                    <p class="text-gray-600">For your child to thrive and explore safely.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="activity" class="text-accent w-10 h-10 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Holistic Development</h3>
+                    <p class="text-gray-600">Promoting social, emotional, physical and cognitive growth.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="users" class="text-dark w-10 h-10 mb-4"></i>
+                    <h3 class="text-xl font-semibold text-dark mb-2">Community Focused</h3>
+                    <p class="text-gray-600">Benefiting the local Deepdale community with outstanding services.</p>
+                </div>
+            </div>
+
+            <!-- History Section -->
+            <div class="history-bg rounded-lg overflow-hidden mb-16">
+                <div class="bg-black bg-opacity-60 py-16 px-8 text-white">
+                    <h2 class="text-3xl font-heading mb-8 text-center">Our History</h2>
+                    
+                    <div class="max-w-4xl mx-auto">
+                        <div class="relative">
+                            <div class="timeline-item relative pb-10 text-center" data-aos="fade-up">
+                                <div class="bg-accent w-6 h-6 rounded-full mx-auto mb-4"></div>
+                                <h3 class="text-xl font-semibold mb-2">The Beginning</h3>
+                                <p class="text-gray-200">
+                                    Savannah and Barkha (the founders) have been friends for many years. Their daughters went to the same school in Preston. They were both looking to start a venture together and what could be more appropriate than starting an educational setting in the very heart of Preston.
+                                </p>
+                            </div>
+                            
+                            <div class="timeline-item relative pb-10 text-center" data-aos="fade-up" data-aos-delay="100">
+                                <div class="bg-accent w-6 h-6 rounded-full mx-auto mb-4"></div>
+                                <h3 class="text-xl font-semibold mb-2">Experience Gained</h3>
+                                <p class="text-gray-200">
+                                    They were both committed to helping out at the primary school's PTA group where they gained immense knowledge on how to manage a childcare setting. Barkha was managing another nursery in Ribbleton for over twelve years and Savannah has a legal management background.
+                                </p>
+                            </div>
+                            
+                            <div class="timeline-item relative pb-10 text-center" data-aos="fade-up" data-aos-delay="200">
+                                <div class="bg-accent w-6 h-6 rounded-full mx-auto mb-4"></div>
+                                <h3 class="text-xl font-semibold mb-2">Establishment</h3>
+                                <p class="text-gray-200">
+                                    In 2015 they rented a dilapidated old and out of use health centre behind Noor Mosque and Home Bargains. The building was renovated and the Ofsted registration was acquired after hard start up work. We are Ofsted rated "Good" in 2017. The doors were formally opened in January 2016 to serve and provide quality child care to the community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facilities Section -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-heading text-dark mb-8 text-center">Our Facilities</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-right">
+                        <img src="http://static.photos/outdoor/640x360/1" alt="Outdoor play area" class="rounded-lg mb-4 w-full">
+                        <h3 class="text-xl font-semibold text-dark mb-2">Outdoor Play Area</h3>
+                        <p class="text-gray-600">
+                            Nursery children under our care have their own outdoor play area which includes tricycling/scootering, play house and den area. We also have a construction and water play area for the children to explore. We are very fortunate to have access to the community allotment.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg" data-aos="fade-left">
+                        <img src="http://static.photos/education/640x360/3" alt="Learning activities" class="rounded-lg mb-4 w-full">
+                        <h3 class="text-xl font-semibold text-dark mb-2">Learning Through Nature</h3>
+                        <p class="text-gray-600">
+                            We have our own fruit and vegetable growing raised beds where children can plant their own strawberries and sunflowers. In the summer term we have built a bug hotel for the children. We are very keen for the children to explore nature and learn by playing outdoors (subject to weather conditions).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forest School Section -->
+            <div class="bg-secondary bg-opacity-10 p-8 rounded-lg mb-16" data-aos="fade-up">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-6 md:mb-0 md:pr-8">
+                        <img src="http://static.photos/nature/640x360/1" alt="Forest school" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-heading text-dark mb-4">Forest School</h3>
+                        <p class="text-gray-600 mb-4">
+                            We are also implementing forest school for our pre-school children. Children travel to the nearby "Woodland Forest School" based in Fulwood and are engaged in various structured activities ranging from wood carving to treasure hunt.
+                        </p>
+                        <p class="text-gray-600">
+                            At Lil Champs Nursery we like to think that we are very special as we serve a multicultural community with respect and kindness as our key motto. Every child is treated as individual and a tailored educational program is created for them. Each child thrives within our setting and they are prepared for their next step in starting primary school.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Safety Section -->
+            <div class="bg-dark text-white p-8 rounded-lg" data-aos="fade-up">
+                <h2 class="text-3xl font-heading mb-6">Health & Safety</h2>
+                <p class="mb-6 opacity-90">
+                    Your child's health and safety are our top priority. Every child deserves the best possible start in life, with the opportunity to develop in an environment both safe and secure. Parents who use early years services, like our nursery, should be able to do so with the utmost confidence that their children will be getting the best possible experiences and are protected from harm at all times. We abide by all government regulations to ensure your child is in a safe and secure environment.
+                </p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <i data-feather="shield" class="w-8 h-8 text-primary mb-2"></i>
+                        <h3 class="text-xl font-semibold mb-2">Daily Risk Assessment</h3>
+                        <p class="opacity-80">
+                            A risk assessment is carried out daily before the children arrive to ensure that the nursery is safe for the children to explore and develop.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <i data-feather="heart" class="w-8 h-8 text-accent mb-2"></i>
+                        <h3 class="text-xl font-semibold mb-2">COVID-19 Measures</h3>
+                        <p class="opacity-80">
+                            Due to Covid-19, the windows are kept open for ventilation. Staff wear face shields as well as regularly cleaning the toys to prevent the spread of Covid-19.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Schedule -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-heading text-dark mb-8 text-center">Daily Schedule</h2>
+            <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                Our daily schedule offers time for children to participate in both group activities and independent child choice activities.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up">
+                    <div class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="clock" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2 text-center">Free Play</h3>
+                    <p class="text-gray-600 text-center text-sm">8:00a.m./9:00 a.m. – 10:00 a.m.</p>
+                    <p class="text-gray-600 text-center mt-2">
+                        The children explore the different areas in the nursery, such as: construction area, home corner, writing area, small world, reading corner…
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-secondary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="users" class="text-secondary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2 text-center">Circle Time</h3>
+                    <p class="text-gray-600 text-center text-sm">10:00 a.m. – 10:15 a.m.</p>
+                    <p class="text-gray-600 text-center mt-2">
+                        The children sing nursery rhymes and learn numbers, colours, shapes and phonics using our sound box.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-accent bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="coffee" class="text-accent w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2 text-center">Snack Time</h3>
+                    <p class="text-gray-600 text-center text-sm">10:15 a.m. – 10:30 a.m</p>
+                    <p class="text-gray-600 text-center mt-2">
+                        Children are provided a variety of healthy snacks and milk. They are also taught life skills, such as learning to pour out their own milk and peeling their own fruit.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-dark bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="book" class="text-dark w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2 text-center">Focused Activity</h3>
+                    <p class="text-gray-600 text-center text-sm">10:30 a.m. – 11:00 a.m.</p>
+                    <p class="text-gray-600 text-center mt-2">
+                        The keyworker carries out a focused activity (planned for each child based on their needs) with the child to help them develop.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up">
+                    <div class="bg-primary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="sun" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2 text-center">Outdoor Play</h3>
+                    <p class="text-gray-600 text-center text-sm">11:00 a.m. – 11:30 a.m.</p>
+                    <p class="text-gray-600 text-center mt-2">
+                        The children play outside to increase their gross motor skills. We have tricycles, bikes, cars, slides, sand, as well as an outdoor construction area.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-secondary bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="activity" class="text-secondary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2 text-center">Sensory Room</h3>
+                    <p class="text-gray-600 text-center text-sm">11:30 a.m. – 12:00 p.m.</p>
+                    <p class="text-gray-600 text-center mt-2">
+                        The sensory room increases children's sensory ability, such as touch, feel, hearing with various textures to explore.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-accent bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="utensils" class="text-accent w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2 text-center">Lunch Time</h3>
+                    <p class="text-gray-600 text-center text-sm">12:00 p.m. – 12:30 p.m.</p>
+                    <p class="text-gray-600 text-center mt-2">
+                        Children can bring their own packed lunches that contains healthy food.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-dark bg-opacity-20 w-12 h-12 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="wind" class="text-dark w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark mb-2 text-center">Exercise</h3>
+                    <p class="text-gray-600 text-center text-sm">1:15 p.m. – 1:30 p.m.</p>
+                    <p class="text-gray-600 text-center mt-2">
+                        The children do a daily guided exercise with the practitioners to increase their gross motor skills and to also learn about living a healthy lifestyle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-heading text-dark mb-12 text-center">The Wonderful Team</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center" data-aos="fade-up">
+                    <div class="bg-gray-100 rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="http://static.photos/people/400x400/1" alt="Team member" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark">Savannah</h3>
+                    <p class="text-gray-600">Co-Founder</p>
+                    <p class="text-gray-600 mt-2 text-sm">With a legal management background and PTA experience.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-gray-100 rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="http://static.photos/people/400x400/2" alt="Team member" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark">Barkha</h3>
+                    <p class="text-gray-600">Co-Founder</p>
+                    <p class="text-gray-600 mt-2 text-sm">12+ years managing nurseries in Ribbleton.</p>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-gray-100 rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
+                        <img src="http://static.photos/people/400x400/3" alt="Team member" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark">Our Staff</h3>
+                    <p class="text-gray-600">Qualified Practitioners</p>
+                    <p class="text-gray-600 mt-2 text-sm">Dedicated team trained to the highest standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-heading mb-4">Li'l Champs Nursery</h3>
+                    <address class="not-italic">
+                        19 Stanleyfield Road Deepdale<br>
+                        Preston<br>
+                        PR1 1QL
+                    </address>
+                    <p class="mt-4">
+                        Phone: <a href="tel:01772875657" class="hover:text-primary transition">01772 875657</a><br>
+                        Email: <a href="mailto:lilchampsnursery@gmail.com" class="hover:text-primary transition">lilchampsnursery@gmail.com</a>
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="childcare.html" class="hover:text-primary transition">Childcare</a></li>
+                        <li><a href="apply.html" class="hover:text-primary transition">Apply</a></li>
+                        <li><a href="keydates.html" class="hover:text-primary transition">Key Dates</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition">Contact Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-primary transition">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact</h4>
+                    <p class="mb-4">Li'l Champs Nursery<br>19 Stanleyfield Rd<br>Preston<br>Deepdale<br>PR1 1QL</p>
+                    <a href="#" class="inline-block text-sm text-gray-400 hover:text-primary transition">Google map</a>
+                    <div class="mt-4">
+                        <p>Phone: <a href="tel:01772875657" class="hover:text-primary transition">01772 875657</a></p>
+                        <p>Email: <a href="mailto:lilchampsnursery@gmail.com" class="hover:text-primary transition">lilchampsnursery@gmail.com</a></p>
+                    </div>
+                    <a href="contact.html" class="inline-block mt-4 bg-primary hover:bg-yellow-400 text-white px-6 py-2 rounded-full font-medium transition">
+                        Book a Visit
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Li'l Champs Nursery. All rights reserved.</p>
+                <p class="mt-2 text-sm">Website design by 786 Retail Media Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
